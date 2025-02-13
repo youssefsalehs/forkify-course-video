@@ -86,6 +86,5 @@ const init = function () {
   paginationview.addhandlerclick(controlpagnation);
   recipeview.addhandlerupdateserving(controlservings);
   addrecipeview.addhandlerupload(controladdrecipe);
-  console.log('welcome');
 };
 init();
