@@ -39,7 +39,6 @@ export const loadrecipe = async function (id) {
     // console.log(state.recipe);
   } catch (err) {
     // Temp error handling
-    console.error(`${err} 💥💥💥💥`);
     throw err;
   }
 };
@@ -50,7 +49,6 @@ export const loadsearchresults = async function (query) {
     const data = await helpers.ajax(
       `${config.API_URL}?search=${query}&key=${config.key}`
     );
-    console.log(data);
     state.search.results = data.data.recipes.map(recipe => {
       return {
         id: recipe.id,
@@ -61,7 +59,6 @@ export const loadsearchresults = async function (query) {
       };
     });
   } catch {
-    console.error(`${err} 💥💥💥💥`);
     throw err;
   }
 };
