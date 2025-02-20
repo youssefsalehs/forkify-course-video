@@ -1,7 +1,7 @@
-import { async } from 'regenerator-runtime';
 import * as config from './config.js';
 import * as helpers from './helpers.js';
 import bookmarksview from './views/bookmarksview.js';
+
 export const state = {
   recipe: {},
   search: {
