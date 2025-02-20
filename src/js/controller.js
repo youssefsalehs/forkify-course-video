@@ -6,9 +6,6 @@ import paginationview from './views/paginationview.js';
 import bookmarksview from './views/bookmarksview.js';
 import previewview from './views/previewview.js';
 import addrecipeview from './views/addrecipeview.js';
-import 'regenerator-runtime/runtime';
-
-import { async } from 'regenerator-runtime';
 
 const controlrecipes = async function () {
   try {
