@@ -20,6 +20,7 @@ const controlrecipes = async function () {
     recipeview.rendererror();
   }
 };
+
 const controlsearchresults = async function () {
   try {
     resultsview.renderspinner();
